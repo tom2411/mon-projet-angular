@@ -48,4 +48,11 @@ export class AppareilViewComponent implements OnInit {
     this.appareilService.switchOffAll();
   }
 
+  OnSave(): void {
+    this.appareilService.saveAppareilToServeur();
+  }
+
+  OnFetch(): void {
+    this.appareilService.getAppareilFromServeur();
+  }
 }
